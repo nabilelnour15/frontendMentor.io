@@ -13,14 +13,14 @@ body {
     flex-wrap: nowrap;
 }
 
-.contaner {
+main {
     background-color: hsl(0, 0%, 100%);
     padding: 20px;
     border-radius: 20px;
     width: 400px;
 }
 
-.contaner>img {
+main>img {
     width: 100%;
     border-radius: 15px;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 @media (max-width: 375px) {
-    .contaner {
+    main {
         width: 290px;
     }
 
