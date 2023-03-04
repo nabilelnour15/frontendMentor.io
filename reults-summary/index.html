@@ -1,47 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div class="contaner">
+    <div class="result">
+      <p class="header">Your Result</p>
+      <div class="score-con">
+        <span class="score">76</span>
+        <span>of 100</span>
+      </div>
+      <h2 class="socre-title">
+        Great
+      </h2>
+      <p class="disc">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="summary">
+      <p class="header">Summary</p>
+      <div>
+        <span>Reaction</span>
+        <span><span class="item-score">80</span>/100</span>
+      </div>
+      <div>
+        <span>Reaction</span>
+        <span><span class="item-score">80</span>/100</span>
+      </div>
+      <div>
+        <span>Reaction</span>
+        <span><span class="item-score">80</span>/100</span>
+      </div>
+      <div>
+        <span>Reaction</span>
+        <span><span class="item-score">80</span>/100</span>
+      </div>
+      <div class="continue">
+        Continue
+      </div>
+    </div>
+  </div>
 
-  Your Result
-  76
-  of 100
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/nabilelnour15">Nabil Elnour</a>.
   </div>
 </body>
+
 </html>

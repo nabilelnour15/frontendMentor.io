@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.contaner {
+    box-shadow: #eee 1px 1px 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.result {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 300px;
+    border-radius: 30px;
+    padding: 30px;
+    color: hsla(221, 100%, 96%, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+}
+
+.result .header {
+    font-size: 1.5rem;
+}
+
+.score-con {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsla(221, 100%, 96%, 0.5);
+}
+
+.score-con .score {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.score-con span:not(.score) {
+    margin-top: -10px;
+}
+
+.result .socre-title {
+    color: #fff;
+}
+
+.result .disc {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+}
+
+
+
+/* challenge line */
+.attribution {
+    position: absolute;
+    bottom: 5px;
+}
