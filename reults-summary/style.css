@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -25,9 +26,9 @@ body {
 
 .result {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    width: 300px;
+    width: 350px;
     border-radius: 30px;
-    padding: 30px;
+    padding: 50px 30px;
     color: hsla(221, 100%, 96%, 0.9);
     display: flex;
     flex-direction: column;
@@ -36,7 +37,8 @@ body {
 }
 
 .result .header {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .score-con {
@@ -73,6 +75,143 @@ body {
     font-weight: 400;
 }
 
+.summary {
+    color: hsl(224, 30%, 27%);
+    width: 350px;
+    height: 100%;
+    border-radius: 30px;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.summary .header {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.summary .continue {
+    background-color: hsl(224, 30%, 27%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.summary .continue:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.summary .item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+.item .item-score {
+    color: hsla(224, 30%, 27%, 1);
+    font-weight: 800;
+    margin-right: 4px;
+}
+
+.Reaction .item-name {
+    color: hsl(0, 100%, 67%);
+    align-items: center;
+}
+
+.Reaction .item-name::before {
+    content: " ";
+    background-image: url("./assets/images/icon-reaction.svg");
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    top: 2px;
+    margin-right: 5px;
+    color: hsl(0, 100%, 67%);
+}
+
+.Reaction {
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.Memory .item-name {
+    color: hsl(39, 100%, 56%);
+    align-items: center;
+}
+
+.Memory .item-name::before {
+    content: " ";
+    background-image: url("./assets/images/icon-memory.svg");
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    top: 2px;
+    margin-right: 5px;
+    color: hsl(39, 100%, 56%);
+}
+
+.Memory {
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+
+.Verbal .item-name {
+    color: hsl(166, 100%, 37%);
+    align-items: center;
+}
+
+.Verbal .item-name::before {
+    content: " ";
+    background-image: url("./assets/images/icon-verbal.svg");
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    top: 2px;
+    margin-right: 5px;
+    color: hsl(166, 100%, 37%)
+}
+
+.Verbal {
+    background-color: hsla(166,
+            100%,
+            37%, 0.05);
+}
+
+.Visual .item-name {
+    color: hsl(234, 85%, 45%);
+    align-items: center;
+}
+
+.Visual .item-name::before {
+    content: " ";
+    background-image: url("./assets/images/icon-visual.svg");
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    top: 2px;
+    margin-right: 5px;
+    color: hsl(234, 85%, 45%)
+}
+
+.Visual {
+    background-color: hsla(234,
+            85%,
+            45%, 0.05);
+}
 
 
 /* challenge line */
