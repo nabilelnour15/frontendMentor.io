@@ -16,7 +16,7 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.contaner {
+main {
     box-shadow: #eee 1px 1px 20px;
     border-radius: 30px;
     display: flex;
@@ -213,9 +213,25 @@ body {
             45%, 0.05);
 }
 
+@media screen and (max-width:900px) {
+    main {
+        box-shadow: none;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+}
 
 /* challenge line */
 .attribution {
     position: absolute;
     bottom: 5px;
+    font-size: 11px;
+    text-align: center;
+    height: 100vh;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
