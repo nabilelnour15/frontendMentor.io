@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Marine-blue-hover: hsl(213, 86%, 27%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    background-color: var(--Magnolia);
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--White);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    height: 568px;
+    width: 274px;
+    padding: 35px 35px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+li .screen_num {
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    width: 35PX;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    font-weight: 500;
+}
+
+li .discrp {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1rem;
+
+}
+
+li .screen_num.active {
+    background-color: var(--Light-blue);
+    color: var(--Marine-blue);
+    border-color: transparent;
+}
+
+li .discrp .step {
+    text-transform: uppercase;
+    font-size: smaller;
+    color: var(--Light-gray);
+}
+
+li .discrp .name_step {
+    text-transform: uppercase;
+    color: var(--White);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+section {
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: var(--Marine-blue);
+    font-weight: 700;
+}
+
+header p {
+    color: var(--Cool-gray);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer button {
+    border: none;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+
+button.back {
+    background-color: transparent;
+    color: var(--Cool-gray);
+}
+
+button:hover {
+    background-color: var(--Marine-blue-hover);
+    color: var(--White);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+fieldset div label {
+    text-transform: capitalize;
+    color: var(--Marine-blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset div input {
+    border-radius: 7px;
+    border: 1px solid var(--Cool-gray);
+    padding: 10px;
+    color: var(--Marine-blue);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+fieldset div input:focus {
+    outline: none;
+    border-color: var(--Purplish-blue);
+    cursor: auto;
+}
+
+
+fieldset .invalid input {
+    border-color: var(--Strawberry-red);
+}
+
+fieldset .invalid label::after {
+    content: "This field is required";
+    color: var(--Strawberry-red);
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+
+}
