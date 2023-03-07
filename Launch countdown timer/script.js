@@ -4,8 +4,7 @@ let minsnum = document.querySelector(".mins .num");
 let secnum = document.querySelector(".sec .num");
 const theDATE = new Date("2023-3-9");
 const thetime = theDATE.getTime();
-
-setInterval(function () {
+function countdown() {
   let nowdate = new Date();
   let nowtime = nowdate.getTime();
   let diff = Math.abs(thetime - nowtime);
@@ -21,5 +20,8 @@ setInterval(function () {
   hoursnum.innerHTML = hours <= 9 ? `0${hours}` : hours;
   minsnum.innerHTML = mins <= 9 ? `0${mins}` : mins;
   secnum.innerHTML = sec <= 9 ? `0${sec}` : sec;
-  console.table(days, hours, mins, sec);
+}
+countdown();
+setInterval(function () {
+  countdown();
 }, 1000);

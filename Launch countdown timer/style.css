@@ -8,7 +8,8 @@
 
 body {
     background-color: hsl(236, 21%, 26%);
-    background-image: linear-gradient(hsl(234, 17%, 12%), hsl(271, 23%, 18%));
+    background-image: linear-gradient(hsl(234, 17%, 12%), hsl(272, 19%, 13%));
+    background-repeat: no-repeat;
     font-size: 14px;
     display: flex;
     justify-content: center;
@@ -115,4 +116,43 @@ footer {
     position: absolute;
     bottom: 10px;
     z-index: 20;
+}
+
+@media screen and (max-width:592PX) {
+    body::after {
+        background-size: 325%;
+        background-position-x: 84%,
+            51%;
+    }
+
+    main {
+        margin-bottom: 27%;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
+        text-align: center;
+    }
+
+    .counter {
+        width: 92%;
+    }
+
+    .item p {
+        font-size: 0.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .num {
+        font-size: 2.5rem;
+        width: 70px;
+        height: 70px;
+    }
+
+    .social {
+        bottom: 45px;
+    }
+
 }
