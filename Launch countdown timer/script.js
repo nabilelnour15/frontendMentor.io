@@ -2,7 +2,7 @@ let daysnum = document.querySelector(".days .num");
 let hoursnum = document.querySelector(".hours .num");
 let minsnum = document.querySelector(".mins .num");
 let secnum = document.querySelector(".sec .num");
-const theDATE = new Date("2023-3-9");
+const theDATE = new Date("2023-12-30");
 const thetime = theDATE.getTime();
 function countdown() {
   let nowdate = new Date();
